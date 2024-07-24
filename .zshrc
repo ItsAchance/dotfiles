@@ -1,8 +1,11 @@
-# This is Achances zsh config
+# zsh config
 
 # Enable colors and change prompt:
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
 
 # Shows time and date at the right side of the prompt
 #RPROMPT="%{$fg[cyan]%}%D{%f/%m/%y}|%D{%H:%M:%S}%{$reset_color%}"
@@ -14,8 +17,6 @@ HISTFILE=~/.zsh_history
 
 # Alias
 alias ls='ls --color'
-alias ssh='ct ssh' # Need to install Chromaterm
-alias code='codium'
 alias grep='grep  --color=auto'
 alias vim='nvim'
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
@@ -27,8 +28,3 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
 
-# Set path for python and pip scripts
-PATH="/Users/alecha/Library/Python/3.9/bin:${PATH}"
-
-# Load zsh-syntax-highlighting; should be last.
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
