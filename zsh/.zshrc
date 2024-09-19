@@ -22,7 +22,9 @@ HISTFILE=~/.zsh_history
 alias ls='ls --color'
 alias grep='grep  --color=auto'
 alias vim='nvim'
+alias py='python3'
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+alias bw='NODE_OPTIONS="--no-deprecation" bw'
 
 # Basic auto/tab complete:
 autoload -U compinit
