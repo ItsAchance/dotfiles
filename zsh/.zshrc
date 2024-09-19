@@ -7,6 +7,9 @@ PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magent
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
+# Shares command history between tmux panes
+setopt inc_append_history
+
 # Shows time and date at the right side of the prompt
 #RPROMPT="%{$fg[cyan]%}%D{%f/%m/%y}|%D{%H:%M:%S}%{$reset_color%}"
 
