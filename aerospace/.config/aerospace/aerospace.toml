@@ -197,3 +197,27 @@ alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
+# Detect when a specific app is started and move to prefered workspace
+[[on-window-detected]]
+if.app-id = 'net.kovidgoyal.kitty'
+run = 'move-node-to-workspace T'
+
+[[on-window-detected]]
+if.app-id = 'org.mozilla.firefox'
+run = 'move-node-to-workspace B'
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.teams2'
+run = 'move-node-to-workspace C'
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.Outlook'
+run = 'move-node-to-workspace M'
+
+[[on-window-detected]]
+if.app-id = 'md.obsidian'
+run = 'move-node-to-workspace O'
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.rdc.macos'
+run = 'move-node-to-workspace R'
