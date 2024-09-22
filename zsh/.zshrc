@@ -25,6 +25,8 @@ alias vim='nvim'
 alias py='python3'
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 alias bw='NODE_OPTIONS="--no-deprecation" bw'
+alias tf='tofu'
+alias xargs='xargs '
 
 # Basic auto/tab complete:
 autoload -U compinit
