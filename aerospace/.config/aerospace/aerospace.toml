@@ -221,3 +221,7 @@ run = 'move-node-to-workspace O'
 [[on-window-detected]]
 if.app-id = 'com.microsoft.rdc.macos'
 run = 'move-node-to-workspace R'
+
+[[on-window-detected]]
+if.app-id = 'com.spotify.client'
+run = 'move-node-to-workspace S'
