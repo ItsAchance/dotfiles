@@ -27,6 +27,7 @@ alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 alias bw='NODE_OPTIONS="--no-deprecation" bw'
 alias tf='tofu'
 alias xargs='xargs '
+alias ipy='ipython3 --TerminalInteractiveShell.editing_mode="vi"'
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -34,4 +35,7 @@ zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
+
+# Functions
+function gpw { bw get password "$1" | pbcopy 2>&1; }
 
