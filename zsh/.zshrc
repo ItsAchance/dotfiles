@@ -7,9 +7,6 @@ PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magent
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
-# Shares command history between tmux panes
-setopt inc_append_history
-
 # Shows time and date at the right side of the prompt
 #RPROMPT="%{$fg[cyan]%}%D{%f/%m/%y}|%D{%H:%M:%S}%{$reset_color%}"
 
@@ -17,6 +14,12 @@ setopt inc_append_history
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
+
+# Ignore duplicate entries in .zsh_history
+setopt HIST_IGNORE_ALL_DUPS
+
+# Shares command history between tmux panes
+setopt INC_APPEND_HISTORY
 
 # Alias
 alias ls='ls --color'
@@ -38,4 +41,5 @@ _comp_options+=(globdots)		# Include hidden files.
 
 # Functions
 function gpw { bw get password "$1" | pbcopy 2>&1; }
+function linnaasjump01 { ssh -D 12345 -q -N alexchan@193.235.145.90 }
 
