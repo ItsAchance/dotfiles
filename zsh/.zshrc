@@ -2,7 +2,7 @@
 
 # Enable colors and change prompt:
 autoload -U colors && colors
-PS1="%B%{$fg[magenta]%}%~ %{$fg[green]%}>%{$reset_color%}%b "
+PS1="%B%{$fg[cyan]%}%~ %{$fg[green]%}>%{$reset_color%}%b "
 
 
 # Set up fzf key bindings and fuzzy completion
