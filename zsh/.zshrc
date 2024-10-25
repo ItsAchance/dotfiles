@@ -32,6 +32,7 @@ alias bw='NODE_OPTIONS="--no-deprecation" bw'
 alias tf='tofu'
 alias xargs='xargs '
 alias ipy='ipython3 --TerminalInteractiveShell.editing_mode="vi"'
+alias sed='gsed'
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -41,6 +42,6 @@ compinit
 _comp_options+=(globdots)		# Include hidden files.
 
 # Functions
-function gpw { bw get password "$1" | pbcopy 2>&1; }
-function linnaasjump01 { ssh -D 12345 -q -N alexchan@193.235.145.90 }
+function gpw { bw get password "$1" | pbcopy 2>&1; echo "Password copied to clipboard" }
+function linnaasjump02 { ssh -D 12345 -q -N alexchan@193.235.145.90; }
 
