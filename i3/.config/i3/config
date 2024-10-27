@@ -190,3 +190,14 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Configure 5px of space between windows and to the screen edges.
+gaps inner 10px
+
+# Configure an additional 5px of extra space to the screen edges,
+# for a total gap of 10px to the screen edges, and 5px between windows.
+gaps outer 10px
+gaps left 20px
+gaps right 20px
+
+# Hide titlebar
+for_window [class="^.*"] border pixel 0
