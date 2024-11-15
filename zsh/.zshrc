@@ -45,4 +45,4 @@ _comp_options+=(globdots)		# Include hidden files.
 # Functions
 function gpw { bw get password "$1" | pbcopy 2>&1; echo "Password copied to clipboard" }
 function linnaasjump02 { ssh -D 12345 -q -N alexchan@193.235.145.90; }
-
+function boilerplate { cp -r ~/code/webdev/boilerplate .; mv boilerplate new-project }
