@@ -12,14 +12,15 @@ local function changeInputSource(sourceID)
     end
 end
 
--- Watch for application switches
-local appWatcher = hs.application.watcher.new(function(appName, eventType, appObject)
-    if eventType == hs.application.watcher.activated then
-        local bundleID = appObject:bundleID()
-        local sourceID = appToLayout[bundleID] or defaultLayout
-        changeInputSource(sourceID)
+-- Window Filter to track focused window
+local wf = hs.window.filter.new()
+wf:subscribe(hs.window.filter.windowFocused, function(win)
+    if win then
+        local app = win:application()
+        if app then
+            local bundleID = app:bundleID()
+            local sourceID = appToLayout[bundleID] or defaultLayout
+            changeInputSource(sourceID)
+        end
     end
 end)
-
-appWatcher:start()
-
