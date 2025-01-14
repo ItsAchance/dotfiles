@@ -33,7 +33,7 @@ alias tf='tofu'
 alias xargs='xargs '
 alias ipy='ipython3 --TerminalInteractiveShell.editing_mode="vi"'
 alias sed='gsed'
-alias fzvim='nvim $(fzf --preview="cat {}")'
+alias fzvim='nvim $(fzf --preview="bat -f {}")'
 
 # Basic auto/tab complete:
 autoload -U compinit

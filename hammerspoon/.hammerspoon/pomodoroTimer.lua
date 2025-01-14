@@ -2,22 +2,16 @@ local timerStart = "Starting Pomodoro timer"
 local timerEnd = "Time's up, time for a break"
 local timerOn = false
 
-
 hs.hotkey.bind({ "cmd", "alt", "ctrl" }, "P", function()
 	if timerOn == false then
-		local notification = hs.notify.new({ title = "Pomodoro", informativeText = timerStart })
-		notification:alwaysPresent()
-		notification:send()
+		local notificationStart = hs.notify.new({ title = "Pomodoro", informativeText = timerStart })
+		notificationStart:alwaysPresent()
+		notificationStart:send()
 		timerOn = true
-		for time = 1, 10 do
-            local sleep = os.execute('sleep 1')
-			if time == 10 then
-				local notification =
-					hs.notify.new({ title = "Pomodoro", informativeText = timerEnd, withdrawAfter = 0 })
-				notification:alwaysPresent()
-				notification:send()
-                timerOn = false
-			end
-		end
+
+        myTimer = hs.timer.doAfter(2400, function()
+        hs.notify.new({title="Time is up!", informativeText= timerEnd}):send()
+        timerOn = false
+		end)
 	end
 end)
