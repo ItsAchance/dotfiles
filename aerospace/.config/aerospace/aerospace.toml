@@ -199,7 +199,7 @@ alt-shift-l = ['join-with right', 'mode main']
 
 # Detect when a specific app is started and move to prefered workspace
 [[on-window-detected]]
-if.app-id = 'net.kovidgoyal.kitty'
+if.app-id = 'com.mitchellh.ghostty'
 run = 'move-node-to-workspace T'
 
 [[on-window-detected]]
@@ -225,3 +225,12 @@ run = 'move-node-to-workspace R'
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
 run = 'move-node-to-workspace S'
+
+[[on-window-detected]]
+if.app-id = 'com.electron.dockerdesktop'
+run = 'move-node-to-workspace D'
+
+
+
+
+

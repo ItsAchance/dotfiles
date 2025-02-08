@@ -1,0 +1,4 @@
+theme = catppuccin-mocha
+font-size = 13
+font-thicken = true
+bold-is-bright = true
