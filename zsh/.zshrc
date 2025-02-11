@@ -1,8 +1,10 @@
 # zsh config
 
+eval "$(starship init zsh)"
+
 # Enable colors and change prompt:
-autoload -U colors && colors
-PS1="%B%{$fg[cyan]%}%~ %{$fg[green]%}>%{$reset_color%}%b "
+#autoload -U colors && colors
+#PS1="%B%{$fg[cyan]%}%~ %{$fg[green]%}>%{$reset_color%}%b "
 
 
 # Set up fzf key bindings and fuzzy completion

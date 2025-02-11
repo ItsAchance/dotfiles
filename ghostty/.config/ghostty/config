@@ -1,4 +1,5 @@
 theme = catppuccin-mocha
-font-size = 13
 font-thicken = true
 bold-is-bright = true
+cursor-style-blink = true
+mouse-hide-while-typing = true
