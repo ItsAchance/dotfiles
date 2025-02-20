@@ -230,7 +230,12 @@ run = 'move-node-to-workspace S'
 if.app-id = 'com.electron.dockerdesktop'
 run = 'move-node-to-workspace D'
 
+[[on-window-detected]]
+if.app-id = 'org.chromium.Chromium' 
+run = 'move-node-to-workspace A'
 
-
+[[on-window-detected]]
+if.app-id = 'com.apple.finder' 
+run = 'move-node-to-workspace F'
 
 
