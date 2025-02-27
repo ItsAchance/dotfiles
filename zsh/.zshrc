@@ -6,7 +6,6 @@ eval "$(starship init zsh)"
 #autoload -U colors && colors
 #PS1="%B%{$fg[cyan]%}%~ %{$fg[green]%}>%{$reset_color%}%b "
 
-
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
@@ -23,6 +22,10 @@ setopt HIST_IGNORE_ALL_DUPS
 
 # Shares command history between tmux panes
 setopt INC_APPEND_HISTORY
+
+# Jump word with control + f or b
+bindkey "^b" backward-word
+bindkey "^f" forward-word
 
 # Alias
 alias ls='ls --color'
