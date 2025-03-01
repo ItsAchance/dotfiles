@@ -35,10 +35,10 @@ brew "noahgorstein/tap/jqp"
 
 # Casks
 cask "aerospace"
-cask "eloston-chromium"
 cask "font-jetbrains-mono-nerd-font"
 cask "ghostty"
 cask "hammerspoon"
 cask "keycastr"
 cask "obsidian"
 cask "shortcat"
+cask "brave-browser"
