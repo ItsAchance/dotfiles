@@ -232,7 +232,7 @@ run = 'move-node-to-workspace D'
 
 [[on-window-detected]]
 if.app-id = 'org.mozilla.librewolf' 
-run = 'org.mozilla.librewolf A'
+run = 'move-node-to-workspace A'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.finder' 
