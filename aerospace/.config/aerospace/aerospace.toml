@@ -231,7 +231,7 @@ if.app-id = 'com.electron.dockerdesktop'
 run = 'move-node-to-workspace D'
 
 [[on-window-detected]]
-if.app-id = 'org.chromium.Chromium' 
+if.app-id = 'org.mozilla.librewolf' 
 run = 'org.mozilla.librewolf A'
 
 [[on-window-detected]]
