@@ -51,4 +51,7 @@ cask "signal"
 cask "spotify"
 cask "ollama"
 cask "docker"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
