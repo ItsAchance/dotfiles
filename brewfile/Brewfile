@@ -1,6 +1,5 @@
 # Taps
 tap "dotenvx/brew"
-tap "homebrew/bundle"
 tap "nikitabobko/tap"
 tap "noahgorstein/tap"
 
