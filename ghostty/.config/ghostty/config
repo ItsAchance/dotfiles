@@ -1,5 +1,8 @@
 theme = catppuccin-mocha
 font-thicken = true
 bold-is-bright = true
+shell-integration-features = no-cursor
 cursor-style-blink = true
 mouse-hide-while-typing = true
+cursor-color = #cdd6f4
+cursor-text = #11111b
