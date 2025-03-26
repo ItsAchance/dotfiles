@@ -42,4 +42,13 @@ cask "keycastr"
 cask "obsidian"
 cask "shortcat"
 cask "brave-browser"
+<<<<<<< Updated upstream
 cask "teamviewer"
+=======
+cask "logi-options+"
+cask "teamviewer"
+cask "signal"
+cask "spotify"
+cask "ollama"
+cask "docker"
+>>>>>>> Stashed changes
