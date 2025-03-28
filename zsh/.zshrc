@@ -12,6 +12,9 @@ source <(fzf --zsh)
 # Shows time and date at the right side of the prompt
 #RPROMPT="%{$fg[cyan]%}%D{%f/%m/%y}|%D{%H:%M:%S}%{$reset_color%}"
 
+# Export GO path
+export GOPATH=$HOME/go
+
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
