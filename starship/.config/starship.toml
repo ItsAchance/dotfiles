@@ -12,7 +12,7 @@ format = "[$path]($style) "
 
 # Git branch module 
 [git_branch]
-format = "[git:($branch)](bold purple) "
+format = "[git:](bold purple)[\\($branch\\)](bright-red) "
 symbol = ""
 
 # Git status module 
