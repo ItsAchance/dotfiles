@@ -32,6 +32,7 @@ brew "yq"
 brew "zig"
 brew "noahgorstein/tap/jqp"
 brew "act"
+brew "ffmpeg"
 
 # Casks
 cask "aerospace"
