@@ -32,11 +32,7 @@ brew "yq"
 brew "zig"
 brew "noahgorstein/tap/jqp"
 brew "act"
-<<<<<<< Updated upstream
 brew "ffmpeg"
-=======
-brew "btop"
->>>>>>> Stashed changes
 
 # Casks
 cask "aerospace"
