@@ -17,7 +17,7 @@ symbol = ""
 
 # Git status module 
 [git_status]
-format = '([\[$all_status$ahead_behind\]]($style) )'
+format = '([$all_status$ahead_behind]($style) )'
 staged = "+"
 modified = "!"
 untracked = "?"
@@ -36,6 +36,7 @@ disabled = false
 
 # Prompt character
 [character]
-success_symbol = "[➜](bold green) "
-error_symbol = "[➜](bold red) "
+format = ''
+#success_symbol = "[➜](bold green) "
+#error_symbol = "[➜](bold red) "
 
