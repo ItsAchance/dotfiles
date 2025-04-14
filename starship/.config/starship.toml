@@ -2,7 +2,7 @@
 
 # Format for the prompt
 format = """
-$directory$git_branch$git_status$python$character
+$character$directory$git_branch$git_status$python
 """
 
 # Directory module
@@ -36,7 +36,6 @@ disabled = false
 
 # Prompt character
 [character]
-format = ''
-#success_symbol = "[➜](bold green) "
-#error_symbol = "[➜](bold red) "
+success_symbol = "[➜](bold green) "
+error_symbol = "[➜](bold red) "
 
