@@ -42,6 +42,7 @@ alias xargs='xargs '
 alias ipy='ipython3 --TerminalInteractiveShell.editing_mode="vi"'
 alias sed='gsed'
 alias fzvim='nvim $(fzf --preview="bat -f {}")'
+alias nano='nvim'
 
 # Basic auto/tab complete:
 autoload -U compinit
