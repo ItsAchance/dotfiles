@@ -33,6 +33,7 @@ brew "zig"
 brew "noahgorstein/tap/jqp"
 brew "act"
 brew "ffmpeg"
+brew "unar"
 
 # Casks
 cask "aerospace"
