@@ -6,18 +6,13 @@ This directory contains the dotfiles for my system
 
 Ensure you have the following installed on your system
 
-### Git
+### git
+### stow
+### brew
 
 ```
-pacman -S git
+brew install git, stow
 ```
-
-### Stow
-
-```
-pacman -S stow
-```
-
 ## Installation
 
 First, check out the dotfiles repo in your $HOME directory using git
