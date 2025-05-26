@@ -1,7 +1,7 @@
 return {
 	{
 		"williamboman/mason.nvim",
-	lazy = false,
+		lazy = false,
 		config = function()
 			require("mason").setup()
 		end,
@@ -45,4 +45,6 @@ return {
 			vim.keymap.set("n", "<space>rn", vim.lsp.buf.rename, {})
 		end,
 	},
+    -- Display LSP diagnostics
+	vim.diagnostic.config({ virtual_text = true }),
 }
