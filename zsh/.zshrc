@@ -1,16 +1,13 @@
 # zsh config
 
+# Enable starship prompt
 eval "$(starship init zsh)"
 
-# Enable colors and change prompt:
-#autoload -U colors && colors
-#PS1="%B%{$fg[cyan]%}%~ %{$fg[green]%}>%{$reset_color%}%b "
+# Set neovim as default editor
+export EDITOR="nvim"
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
-
-# Shows time and date at the right side of the prompt
-#RPROMPT="%{$fg[cyan]%}%D{%f/%m/%y}|%D{%H:%M:%S}%{$reset_color%}"
 
 # Export GO path
 export GOPATH=$HOME/go
@@ -52,4 +49,5 @@ compinit
 _comp_options+=(globdots)		# Include hidden files.
 
 # Functions
-function gpw { bw get password "$1" | pbcopy 2>&1; echo "Password copied to clipboard" }
+function gpw { password=$(bw get password $1); if [[ $? -eq 0 ]] then; echo "${password}" | pbcopy; echo 'Password copied to clipboard'; else :; fi }
+
