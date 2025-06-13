@@ -12,6 +12,17 @@ return {
 		opts = {
 			auto_install = true,
 		},
+		config = function()
+			require("mason-lspconfig").setup({
+				ensure_installed = {
+					"lua_ls",
+					"pyright",
+					"ts_ls",
+					"html",
+					"cssls",
+				},
+			})
+		end,
 	},
 	{
 		"neovim/nvim-lspconfig",
@@ -45,6 +56,6 @@ return {
 			vim.keymap.set("n", "<space>rn", vim.lsp.buf.rename, {})
 		end,
 	},
-    -- Display LSP diagnostics
+	-- Display LSP diagnostics
 	vim.diagnostic.config({ virtual_text = true }),
 }
