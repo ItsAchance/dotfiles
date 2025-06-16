@@ -59,3 +59,5 @@ return {
 	-- Display LSP diagnostics
 	vim.diagnostic.config({ virtual_text = true }),
 }
+
+
