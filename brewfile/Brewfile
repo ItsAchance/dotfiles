@@ -36,6 +36,7 @@ brew "ffmpeg"
 brew "unar"
 brew "rsync"
 brew "pandoc"
+brew "tsc"
 
 # Casks
 cask "aerospace"
