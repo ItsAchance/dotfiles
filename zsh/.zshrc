@@ -51,3 +51,5 @@ _comp_options+=(globdots)		# Include hidden files.
 # Functions
 function gpw { password=$(bw get password $1); if [[ $? -eq 0 ]] then; echo "${password}" | pbcopy; echo 'Password copied to clipboard'; else :; fi }
 
+# Make vim.databod use psql for postgresql
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
