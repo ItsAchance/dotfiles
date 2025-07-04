@@ -34,6 +34,7 @@ brew "unar"
 brew "rsync"
 brew "pandoc"
 brew "tsc"
+brew "libpq"
 
 # Casks
 cask "aerospace"
