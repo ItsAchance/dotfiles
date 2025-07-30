@@ -1,29 +1,30 @@
 # My dotfiles
 
-This directory contains the dotfiles for my system
+This directory contains the dotfiles for my system using mainly macOS
 
-## Requirements
+## Prerequisites
 
-Ensure you have the following installed on your system
-
-### git
-### stow
-### brew
-
+### Install Homebrew
 ```
-brew install git, stow
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install stow
 ```
-## Installation
-
-First, check out the dotfiles repo in your $HOME directory using git
-
+## Add the following alias to your .bashrc or .zshrc
+```
+alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+```
+### Change directory to your dotfiles repo, for example
+```
+cd ~/dotfiles
+```
+### And then clone the repo
 ```
 $ git clone git@github.com/ItsAchance/dotfiles.git
 $ cd dotfiles
 ```
-
-then use GNU stow to create symlinks
+### Then use GNU stow to create symlinks
 
 ```
 $ stow .
 ```
+
