@@ -7,4 +7,4 @@ cursor-style-blink = true
 mouse-hide-while-typing = true
 cursor-color = #cdd6f4
 cursor-text = #11111b
-title = 👻
+macos-titlebar-style = hidden

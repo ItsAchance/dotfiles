@@ -1,5 +1,8 @@
 # zsh config
 
+# Set shell bindkeys to emacs, sorry vim
+bindkey -e
+
 # Enable starship prompt
 eval "$(starship init zsh)"
 
