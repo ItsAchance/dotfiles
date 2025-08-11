@@ -215,7 +215,7 @@ if.app-id = 'com.spotify.client'
 run = 'move-node-to-workspace S'
 
 [[on-window-detected]]
-if.app-id = 'com.electron.dockerdesktop'
+if.app-id = 'io.rancherdesktop.app'
 run = 'move-node-to-workspace D'
 
 [[on-window-detected]]
