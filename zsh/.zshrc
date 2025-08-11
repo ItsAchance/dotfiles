@@ -56,3 +56,6 @@ function gpw { password=$(bw get password $1); if [[ $? -eq 0 ]] then; echo "${p
 
 # Make vim.databod use psql for postgresql
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# Path for rancher desktop
+export PATH=$PATH:$HOME/.rd/bin
