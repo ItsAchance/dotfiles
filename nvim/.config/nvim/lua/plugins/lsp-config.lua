@@ -20,6 +20,9 @@ return {
 					"ts_ls",
 					"html",
 					"cssls",
+					"gopls",
+					"gofumpt",
+					"templ",
 				},
 			})
 		end,
