@@ -43,6 +43,7 @@ alias ipy='ipython3 --TerminalInteractiveShell.editing_mode="vi"'
 alias sed='gsed'
 alias fzvim='nvim $(fzf --preview="bat -f {}")'
 alias nano='nvim'
+alias k='kubectl'
 
 # Basic auto/tab complete:
 autoload -U compinit
