@@ -21,7 +21,6 @@ return {
 					"html",
 					"cssls",
 					"gopls",
-					"gofumpt",
 					"templ",
 				},
 			})
