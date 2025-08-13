@@ -2,6 +2,7 @@
 tap "dotenvx/brew"
 tap "nikitabobko/tap"
 tap "noahgorstein/tap"
+tap "homebrew-zathura/zathura"
 
 # Brew
 brew "fzf"
@@ -33,6 +34,7 @@ brew "rsync"
 brew "pandoc"
 brew "tsc"
 brew "libpq"
+brew "zathura-pdf-mupdf"
 
 # Casks
 cask "aerospace"
@@ -50,3 +52,4 @@ cask "signal"
 cask "spotify"
 cask "ollama"
 cask "rancher"
+cask "zathura"
