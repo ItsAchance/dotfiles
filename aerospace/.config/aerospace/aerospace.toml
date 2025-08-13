@@ -223,5 +223,5 @@ if.app-id = 'com.apple.finder'
 run = 'move-node-to-workspace F'
 
 [[on-window-detected]]
-if.app-id = 'com.pwmt.zathura ' 
+if.app-id = 'com.pwmt.zathura' 
 run = 'move-node-to-workspace Z'
