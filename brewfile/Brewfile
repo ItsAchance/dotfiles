@@ -38,6 +38,7 @@ brew "zathura"
 brew "zathura-pdf-mupdf"
 brew "neomutt"
 brew "ncdu"
+brew "fdupes"
 
 # Casks
 cask "font-jetbrains-mono-nerd-font"
