@@ -22,6 +22,7 @@ return {
                     "cssls",
                     "gopls",
                     "templ",
+                    "tailwindcss",
                 },
                 automatic_enable = {
                     exclude = {
@@ -32,6 +33,7 @@ return {
                         "cssls",
                         "gopls",
                         "templ",
+                        "tailwindcss",
                     },
                 },
             })
