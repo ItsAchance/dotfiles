@@ -12,6 +12,10 @@ This is a repo containing my dotfiles running on macOS.
 ```
 brew install stow
 ```
+### Install Tmux Plugin Manager(TPM)
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
 ## Add the following alias to your .bashrc or .zshrc
 ```
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'

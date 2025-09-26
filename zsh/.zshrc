@@ -36,7 +36,6 @@ alias grep='grep  --color=auto'
 alias vim='nvim'
 alias py='python3'
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
-alias bw='NODE_OPTIONS="--no-deprecation" bw'
 alias tf='tofu'
 alias xargs='xargs '
 alias ipy='ipython3 --TerminalInteractiveShell.editing_mode="vi"'
@@ -51,9 +50,6 @@ zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
-
-# Functions
-function gpw { password=$(bw get password $1); if [[ $? -eq 0 ]] then; echo "${password}" | pbcopy; echo 'Password copied to clipboard'; else :; fi }
 
 # Make vim.databod use psql for postgresql
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"

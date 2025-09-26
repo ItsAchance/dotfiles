@@ -1,4 +1,4 @@
-theme = catppuccin-mocha
+theme = Catppuccin Mocha
 font-thicken = true
 bold-is-bright = true
 shell-integration-features = no-cursor
