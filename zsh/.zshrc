@@ -56,3 +56,9 @@ export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # Path for rancher desktop
 export PATH=$PATH:$HOME/.rd/bin
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/achance/.dart-cli-completion/zsh-config.zsh ]] && . /home/achance/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
