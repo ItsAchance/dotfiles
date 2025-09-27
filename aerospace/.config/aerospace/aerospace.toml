@@ -200,28 +200,20 @@ cmd-shift-l = ['join-with right', 'mode main']
 # Detect when a specific app is started and move to prefered workspace
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
-run = 'move-node-to-workspace T'
+run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
 if.app-id = 'com.brave.Browser'
-run = 'move-node-to-workspace B'
-
-[[on-window-detected]]
-if.app-id = 'md.obsidian'
-run = 'move-node-to-workspace O'
+run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
-run = 'move-node-to-workspace S'
+run = 'move-node-to-workspace 3'
 
 [[on-window-detected]]
-if.app-id = 'io.rancherdesktop.app'
-run = 'move-node-to-workspace D'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.finder' 
-run = 'move-node-to-workspace F'
+if.app-id = 'md.obsidian'
+run = 'move-node-to-workspace 4'
 
 [[on-window-detected]]
 if.app-id = 'com.pwmt.zathura' 
-run = 'move-node-to-workspace Z'
+run = 'move-node-to-workspace 5'
