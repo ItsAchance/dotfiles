@@ -15,6 +15,9 @@ source <(fzf --zsh)
 # Export GO path
 export GOPATH=$HOME/go
 
+# Path for air
+export PATH=$PATH:$(go env GOPATH)/bin
+
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
