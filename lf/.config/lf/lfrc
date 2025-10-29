@@ -1,0 +1,12 @@
+# Basic settings
+set ignorecase true
+
+# Open image, video or pdf
+cmd open ${{
+    case $(file --mime-type -Lb $f) in
+        image/*) imv $fx ;;
+        video/*) mpv $f ;;
+        application/pdf) zathura $f ;;
+        *) xdg-open $f ;;
+    esac
+}}
