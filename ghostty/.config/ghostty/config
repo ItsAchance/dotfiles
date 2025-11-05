@@ -1,4 +1,9 @@
 theme = Catppuccin Mocha
+font-family = JetBrainsMono Nerd Font
+font-style = Bold
+font-style-bold = Bold
+font-style-italic = Bold Italic
+font-style-bold-italic = Bold Italic
 font-thicken = true
 bold-is-bright = true
 shell-integration-features = no-cursor
