@@ -125,3 +125,13 @@ button:hover {
     padding-left: 6px;
     padding-right: 6px;
 }
+
+#memory {
+    color: @mauve;
+    border-bottom: 2px solid @mauve;
+}
+
+#cpu {
+    color: @blue;
+    border-bottom: 2px solid @blue;
+}
