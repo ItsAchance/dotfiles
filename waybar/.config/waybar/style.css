@@ -132,6 +132,6 @@ button:hover {
 }
 
 #cpu {
-    color: @blue;
-    border-bottom: 2px solid @blue;
+    color: @peach;
+    border-bottom: 2px solid @peach;
 }

@@ -32,7 +32,7 @@
     },
     "cpu": {
         "interval": 10,
-        "format": "<span size='13000' foreground='#89b4fa'>󰻠 </span> {usage}%",
+        "format": "<span size='13000' foreground='#fab387'>󰻠 </span> {usage}%",
         "tooltip-format": "CPU Usage: {usage}%"
     },
     "memory": {
