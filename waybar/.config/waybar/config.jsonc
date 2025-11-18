@@ -22,13 +22,6 @@
         "format-icons": ["", "", "", "", ""],
         "tooltip-format": "{time}"
     },
-    "network": {
-        "format-wifi": "<span size='13000' foreground='#f5e0dc'>  </span>{essid}",
-        "format-ethernet": "<span size='13000' foreground='#f5e0dc'>󰤭  </span> Disconnected",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
-        "tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
-    },
     "pulseaudio": {
         "format": "{icon}  {volume}%",
         "format-muted": "",
@@ -46,5 +39,13 @@
         "interval": 30,
         "format": "<span size='13000' foreground='#cba6f7'>󰘚 </span> {used:0.1f}G / {total:0.1f}G",
         "tooltip-format": "RAM: {used:0.1f}G / {total:0.1f}G ({percentage}%)"
+    },
+    "network": {
+        "format-wifi": "<span size='13000' foreground='#f5e0dc'>  </span>{essid}",
+        "format-ethernet": "<span size='13000' foreground='#f5e0dc'>󰈀  </span>Connected",
+        "format-linked": "<span size='13000' foreground='#f5e0dc'>󰈀  </span>No IP",
+        "format-disconnected": "<span size='13000' foreground='#f5e0dc'>󰌙  </span>Disconnected",
+        "tooltip-format-wifi": "Signal Strength: {signalStrength}%",
+        "tooltip-format-ethernet": "Wired Connection: {ifname}"
     }
 }
