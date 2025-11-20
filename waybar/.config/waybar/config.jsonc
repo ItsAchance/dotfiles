@@ -31,12 +31,12 @@
         "on-click": "pavucontrol"
     },
     "cpu": {
-        "interval": 10,
+        "interval": 5,
         "format": "<span size='13000' foreground='#fab387'>󰻠 </span> {usage}%",
         "tooltip-format": "CPU Usage: {usage}%"
     },
     "memory": {
-        "interval": 30,
+        "interval": 5,
         "format": "<span size='13000' foreground='#cba6f7'>󰘚 </span> {used:0.1f}G / {total:0.1f}G",
         "tooltip-format": "RAM: {used:0.1f}G / {total:0.1f}G ({percentage}%)"
     },
