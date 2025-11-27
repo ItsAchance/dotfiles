@@ -46,7 +46,7 @@ alias sed='gsed'
 alias fzvim='nvim $(fzf --preview="bat -f {}")'
 alias nano='nvim'
 alias k='kubectl'
-alias lf='lf-ueberzug'
+alias lf='lf-ueberzug .'
 
 # Basic auto/tab complete:
 autoload -U compinit
