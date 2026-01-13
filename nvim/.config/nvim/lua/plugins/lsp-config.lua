@@ -16,7 +16,6 @@ return {
             require("mason-lspconfig").setup({
                 ensure_installed = {
                     "lua_ls",
-                    "pyright",
                     "ts_ls",
                     "html",
                     "cssls",
@@ -27,7 +26,6 @@ return {
                 automatic_enable = {
                     exclude = {
                         "lua_ls",
-                        "pyright",
                         "ts_ls",
                         "html",
                         "cssls",
