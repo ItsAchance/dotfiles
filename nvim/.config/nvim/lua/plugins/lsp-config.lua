@@ -41,5 +41,5 @@ return {
         "neovim/nvim-lspconfig",
     },
     -- Display LSP diagnostics
-    vim.diagnostic.config({ virtual_text = true }),
+    vim.diagnostic.config({ virtual_text = true })
 }
