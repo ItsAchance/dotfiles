@@ -6,6 +6,9 @@ bindkey -e
 # Enable starship prompt
 eval "$(starship init zsh)"
 
+# Make shell use the agnet socket
+export SSH_AUTH_SOCK="$XDG_RUNTIMEDIR/ssh-agent.socket"
+
 # Set neovim as default editor
 export EDITOR="nvim"
 
