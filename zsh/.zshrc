@@ -6,9 +6,6 @@ bindkey -e
 # Enable starship prompt
 eval "$(starship init zsh)"
 
-# Make shell use the agnet socket
-export SSH_AUTH_SOCK="$XDG_RUNTIMEDIR/ssh-agent.socket"
-
 # Set neovim as default editor
 export EDITOR="nvim"
 
@@ -59,9 +56,6 @@ _comp_options+=(globdots)		# Include hidden files.
 
 # Make vim.databod use psql for postgresql
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
-
-# Path for rancher desktop
-export PATH=$PATH:$HOME/.rd/bin
 
 ## [Completion]
 ## Completion scripts setup. Remove the following line to uninstall
