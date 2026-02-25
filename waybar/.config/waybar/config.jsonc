@@ -2,7 +2,7 @@
     "position": "top",
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["network", "memory", "cpu", "pulseaudio", "battery", "clock"],
+    "modules-right": ["network", "memory", "cpu", "pulseaudio", "battery", "hyprland/language", "clock"],
     "clock": {
         "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
@@ -47,5 +47,9 @@
         "format-disconnected": "<span size='13000' foreground='#f5e0dc'>󰌙  </span>Disconnected",
         "tooltip-format-wifi": "Signal Strength: {signalStrength}%",
         "tooltip-format-ethernet": "Wired Connection: {ifname}"
-    }
+    },
+    "language": {
+        "format": "{short}",
+        "tooltip": false
+    },
 }
