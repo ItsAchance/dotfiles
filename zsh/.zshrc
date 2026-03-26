@@ -6,8 +6,8 @@ bindkey -e
 # Enable starship prompt
 eval "$(starship init zsh)"
 
-# Make shell use the agnet socket
-export SSH_AUTH_SOCK="$XDG_RUNTIMEDIR/ssh-agent.socket"
+#FML
+export PATH=~/.local/bin/:$PATH
 
 # Set neovim as default editor
 export EDITOR="nvim"
@@ -62,6 +62,13 @@ export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # Path for rancher desktop
 export PATH=$PATH:$HOME/.rd/bin
+
+# Opencode
+export PATH=/home/alexander.chance@fnox.it/.opencode/bin:$PATH
+
+#vSphere
+export VSPHERE_LOCAL=alexander_chance@vsphere.local
+
 
 ## [Completion]
 ## Completion scripts setup. Remove the following line to uninstall
