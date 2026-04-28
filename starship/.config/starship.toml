@@ -2,7 +2,7 @@
 
 # Format for the prompt
 format = """
-$character$directory$git_branch$git_status$python
+$container$character$directory$git_branch$git_status$python
 """
 
 # Directory module
@@ -38,4 +38,10 @@ disabled = false
 [character]
 success_symbol = "[➜](bold green) "
 error_symbol = "[➜](bold red) "
+
+# Container indicator (distrobox/podman/docker) — only renders inside a container
+[container]
+format = "[$symbol \\[$name\\]]($style) "
+symbol = "⬢"
+style = "bold purple dimmed"
 
