@@ -10,7 +10,8 @@ return {
                 "markdown", "markdown_inline",
                 "bash", "json", "yaml", "toml",
                 "go", "gomod", "gosum",
-                "html", "css", "javascript", "typescript", "tsx",
+                "html", "css", "javascript", "typescript",
+                "tsx", "dockerfile",
             })
 
             vim.api.nvim_create_autocmd("FileType", {
